@@ -1,0 +1,24 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST localhost:8080/members
+Content-Type: application/json
+
+{
+  "id" : "test",
+  "name": "장현성",
+  "password": "1234",
+  "age" : 28,
+  "role" : "ADMIN"
+}
+
+### 단건조회
+GET localhost:8080/members/test
+Accept: text/csv
+
+### 리스트 조회
+GET localhost:8080/members
+
+
